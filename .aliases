@@ -1,0 +1,48 @@
+alias rm='rm -dvr'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias mkdir='mkdir -pv'
+alias mk='mkdir -pv'
+alias ls='ls -FGa'
+alias ll='ls -FGlAhp'
+alias less='less -FSRXc'
+cd() { builtin cd "$@"; ll; }
+alias cd..='cd ../'                      # Go back 1 directory level
+alias ..='cd ../'                        # Go back 1 directory level
+alias ...='cd ../../'                    # Go back 2 directory level
+alias .3='cd ../../../'                  # Go back 3 directory level
+alias .4='cd ../../../../'               # Go back 4 directory level
+alias .5='cd ../../../../../'            # Go back 5 directory level
+alias ~='cd ~'                           # Go Home
+alias f='open -a Finder ./'              # Opens current directory in finder
+alias c='clear'                          # Clear the terminal
+alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less' # Full recursive directory listing
+alias poweroff='sudo shutdown -h now'
+alias rmall='sudo rm -rf * .* *.*'               #Remove all file in current directory
+
+#Process Management
+alias memHogsTop='top -l 1 -o rsize | head -20'    # find memory hogs
+alias memHogsPs='ps wwaxm -o pid,stat,vsize,rss,time,command | head -10'  # find memory hogs
+alias cpu_hogs='ps wwaxr -o pid,stat,%cpu,time,command | -10' # find cpu hogs
+alias topForever='top -l 9999999 -s 10 -o cpu'     # continual 'top' lisying(every 10 sec)
+alias ttop="top -R -F -s 10 -o rsize"              # minimize resources
+
+#Networking
+
+alias myipv6='curl icanhazip.com'                   # public ip add v6
+alias myip='curl ipecho.net/plain; echo'            # public ip add v4
+alias myhost='curl ifconfig.me/host'                # public hostname  
+alias netCons='lsof -i'                             # show all open tcp/ip sockets
+alias flushDNS='dscacheutil -flushcache'            # Flush out the dns cache
+alias lsock='sudo /usr/sbin/lsof -i -P'             # display open sockets
+alias lsockU='sudo /usr/sbin/lsof -nP | grep UDP'   # display open udp sockets
+alias lsockT='sudo /usr/sbin/lsof -nP | grep TCP'   # display open tcp sockets
+alias ipInfo0='ipconfig getpacket en0'              # ipInfo0:      Get info on connections for en0
+alias ipInfo1='ipconfig getpacket en1'              # ipInfo1:      Get info on connections for en1
+alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
+alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rules inc/ blocked IPs
+
+#Server Alias
+alias webserver='ssh user@snf-471984.vm.okeanos.grnet.gr'
+alias angkyria='ssh user@snf-627068.vm.okeanos.grnet.gr'
+
