@@ -43,8 +43,8 @@ alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listenin
 alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rules inc/ blocked IPs
 
 #Server Alias
-alias webserver='ssh user@snf-471984.vm.okeanos.grnet.gr'
-alias angkyria='ssh user@snf-627068.vm.okeanos.grnet.gr'
+alias webserver='ssh user@'
+alias angkyria='ssh user@'
 
 #OS X Update
 alias update='sudo software update -i -a; sudo port selfupdate; sudo port outdated; sudo gem update --system; sudo gem update'
