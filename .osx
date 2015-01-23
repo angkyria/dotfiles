@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+# Restart automatically if the computer freezes
+sudo systemsetup -setrestartfreeze on
+
+# Disable local Time Machine snapshots
+sudo tmutil disablelocal
+
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles TRUE
+
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Finder: show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+#Disable hibernation
+sudo pmset -a hibernatemode 0
+
+#Disable system-wide resume
+defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+
+#Turn off keyboard illumination when computer is not used for 3 minutes
+defaults write com.apple.BezelServices kDimTime -int 150
+
+#Show icons for hard drives, servers, and removable media on the desktop
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+
+# Remove the sleep image file to save disk space
+sudo rm /Private/var/vm/sleepimage
+# Create a zero-byte file instead…
+sudo touch /Private/var/vm/sleepimage
+# …and make sure it can’t be rewritten
+sudo chflags uchg /Private/var/vm/sleepimage
+
+
