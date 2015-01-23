@@ -4,7 +4,7 @@ done
 unset file
 
 #Paths
-export PATH=/opt/local/bin:/opt/local/sbin/:/bin/:/sbin/:/usr/bin/:/usr/sbin/:/usr/local/bin/:PATH
+export PATH=~/bin:/bin/:/sbin/:/usr/bin/:/usr/sbin/:/usr/local/bin/:/opt/local/bin:/opt/local/sbin/: PATH
 
 #Default Editor
 export EDITOR="/usr/bin/local/vim"

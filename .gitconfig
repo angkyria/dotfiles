@@ -1,0 +1,14 @@
+[user]
+  name = Angelos Kyriacou
+  email = angkyria@podilates.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = auto
+[core]
+  editor = vim
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
