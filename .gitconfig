@@ -1,14 +1,23 @@
 [user]
-  name = Angelos Kyriacou
-  email = angkyria@podilates.com
+  	name = Angelos Kyriacou
+  	email = angkyria@podilates.com
 [color]
-  diff = auto
-  status = auto
-  branch = auto
-  ui = auto
+  	diff = auto
+  	status = auto
+  	branch = auto
+	ui = auto
+[color "status"]
+	added = yellow reverse
+	changed = green
+	untracked = cyan
 [core]
-  editor = vim
+	editor = vim
+	excludesfile = ~/.gitignore
 [credential]
 	helper = osxkeychain
 [push]
 	default = simple
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f

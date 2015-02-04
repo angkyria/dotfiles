@@ -6,6 +6,16 @@ unset file
 #Paths
 export PATH=~/bin:/bin/:/sbin/:/usr/bin/:/usr/sbin/:/usr/local/bin/:/opt/local/bin:/opt/local/sbin/: PATH
 
+#Bash completion
+if [ -f /usr/local/share/bash-completion/bash_completion ];then
+	. /usr/local/share/bash-completion/bash_completion
+fi
+
+#Git completion
+if [ -f ~/.git-completion ];then
+	. ~/.git-completion
+fi
+
 #Default Editor
 export EDITOR="/usr/bin/local/vim"
 
