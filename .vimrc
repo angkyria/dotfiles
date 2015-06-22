@@ -36,6 +36,7 @@ let g:solarized_visibility="normal"
 color solarized
 highlight clear SignColumn 
 highlight clear LineNr
+set t_Co=256
 set ruler			"Show the ruler
 set showcmd 			"Show partial command in status line
 set tabpagemax=100		"Show only 20 tabs
@@ -64,13 +65,7 @@ let NERDTreeShowHidden=1
 let NERDTreeKeepTreeInNewTab=1
 
 "Airline settings
-let g:airline_symbols = {}
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-let g:airline_symbols.paste = 'Þ'
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#capslock#enabled = 1
@@ -79,6 +74,16 @@ let g:airline#extensions#hunks#enabled = 1
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#tmuxline#enabled = 0
 let g:airline#extensions#ctrlp#color_template = 'insert'
+
+"webdevicon settings
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_enable_airline_tabline = 1
+let g:webdevicons_enable_airline_statusline = 1
+
+"tmuxline settings
+let g:tmuxline_powerline_separators = 0
+let g:tmuxline_preset = 'full'
 
 "Neocomplcache setting
 let g:acp_enableAtStartup = 0
@@ -114,3 +119,11 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
+"Ultisnips settings
+let g:UltiSnipsUsePythonVersion = 2
+
+"gitgutter settings
+let g:gitgutter_realtime = 1
+let g:gitgutter_enabled = 1
+let g:gitgutter_signs = 1

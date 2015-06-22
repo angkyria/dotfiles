@@ -44,7 +44,7 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
 
 #Server Alias
 alias webserver='ssh user@'
-alias angkyria='ssh user@'
+alias angkyria='ssh user@snf-659261.vm.okeanos.grnet.gr'
 
 #OS X Update
-alias update='sudo software update -i -a; sudo port selfupdate; sudo port outdated; sudo gem update --system; sudo gem update'
+alias update='sudo softwareupdate -liva; sudo port selfupdate; sudo port upgrade outdated; sudo gem update --system; sudo gem update'
