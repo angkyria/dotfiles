@@ -27,6 +27,10 @@ augroup resCur
 	autocmd BufWinEnter * call ResCur()
 augroup END
 
+set foldmethod=indent   
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 "Vim UI
 set background=dark
 let g:solarized_termcolors=256
