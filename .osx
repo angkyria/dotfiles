@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
@@ -100,14 +100,14 @@ defaults write com.apple.dock wvous-br-corner -int 2
 defaults write com.apple.dock wvous-br-modifier -int 0
 
 defaults write com.apple.systemuiserver menuExtras -array \
+ 	"/System/Library/CoreServices/Menu Extras/iChat.menu" \
 	"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-	"/System/Library/CoreServices/Menu Extras/Volume.menu" \
-	"/System/Library/CoreServices/Menu Extras/User.menu" \
+ 	"/System/Library/CoreServices/Menu Extras/VPN.menu" \
 	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+ 	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+	"/System/Library/CoreServices/Menu Extras/Volume.menu" \
 	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
-	"/System/Library/CoreServices/Menu Extras/Clock.menu"
-
+	"/System/Library/CoreServices/Menu Extras/Clock.menu" 
 # Privacy: don’t send search queries to Apple
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
 defaults write com.apple.Safari SuppressSearchSuggestions -bool true
@@ -117,5 +117,20 @@ defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 
 # Prevent Safari from opening ‘safe’ files automatically after downloading
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+
+# Kern secure level
+sudo sysctl -w kern.securelevel=3 | 2>&1 | 1>/dev/null
+
+#Security nvram
+sudo nvram security-mode="full"
+
+#enable application firewall logging
+defaults write /Library/Preferences/com.apple.alf loggingenabled 1
+
+#enable firewall login
+sudo sysctl -w net.inet.ip.fw.verbose=2 | 2>&1 | 1>/dev/null
+
+#secure user home folder premisions
+sudo chmod go-rx /Users/$USER
 
 sudo shutdown -r now
