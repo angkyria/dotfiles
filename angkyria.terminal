@@ -117,11 +117,11 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 	AAGGoKQHCBESVSRudWxs1AkKCwwNDg8QVk5TU2l6ZVhOU2ZGbGFnc1ZOU05hbWVWJGNs
-	YXNzI0AqAAAAAAAAEBCAAoADXxBKU2F1Y2VDb2RlUG93ZXJsaW5lUGx1c05lcmRGaWxl
-	VHlwZXNQbHVzRm9udEF3ZXNvbWVQbHVzT2N0aWNvbnNQbHVzUG9taWNvbnPSExQVFlok
-	Y2xhc3NuYW1lWCRjbGFzc2VzVk5TRm9udKIVF1hOU09iamVjdF8QD05TS2V5ZWRBcmNo
-	aXZlctEaG1Ryb290gAEACAARABoAIwAtADIANwA8AEIASwBSAFsAYgBpAHIAdAB2AHgA
-	xQDKANUA3gDlAOgA8QEDAQYBCwAAAAAAAAIBAAAAAAAAABwAAAAAAAAAAAAAAAAAAAEN
+	YXNzI0AqAAAAAAAAEBCAAoADXxA7U2F1Y2VDb2RlUHJvTmVyZEZvbnRQbHVzRm9udEF3
+	ZXNvbWVQbHVzT2N0aWNvbnNQbHVzUG9taWNvbnPSExQVFlokY2xhc3NuYW1lWCRjbGFz
+	c2VzVk5TRm9udKIVF1hOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEaG1Ryb290gAEI
+	ERojLTI3PEJLUltiaXJ0dni2u8bP1tni9Pf8AAAAAAAAAQEAAAAAAAAAHAAAAAAAAAAA
+	AAAAAAAAAP4=
 	</data>
 	<key>FontAntialias</key>
 	<true/>
@@ -141,33 +141,37 @@
 	<key>ShouldRestoreContent</key>
 	<false/>
 	<key>ShowActiveProcessArgumentsInTabTitle</key>
-	<false/>
+	<true/>
 	<key>ShowActiveProcessArgumentsInTitle</key>
 	<true/>
 	<key>ShowActiveProcessInTabTitle</key>
-	<false/>
+	<true/>
 	<key>ShowActiveProcessInTitle</key>
 	<true/>
 	<key>ShowActivityIndicatorInTab</key>
-	<false/>
+	<true/>
 	<key>ShowCommandKeyInTitle</key>
 	<false/>
+	<key>ShowComponentsWhenTabHasCustomTitle</key>
+	<true/>
 	<key>ShowDimensionsInTitle</key>
 	<false/>
 	<key>ShowRepresentedURLInTabTitle</key>
-	<false/>
-	<key>ShowRepresentedURLInTitle</key>
 	<true/>
-	<key>ShowRepresentedURLPathInTabTitle</key>
+	<key>ShowRepresentedURLInTitle</key>
 	<false/>
+	<key>ShowRepresentedURLPathInTabTitle</key>
+	<true/>
 	<key>ShowRepresentedURLPathInTitle</key>
 	<false/>
 	<key>ShowShellCommandInTitle</key>
+	<false/>
+	<key>ShowTTYNameInTabTitle</key>
 	<true/>
 	<key>ShowTTYNameInTitle</key>
-	<true/>
+	<false/>
 	<key>ShowWindowSettingsNameInTitle</key>
-	<true/>
+	<false/>
 	<key>TerminalType</key>
 	<string>xterm-256color</string>
 	<key>TextBoldColor</key>
@@ -244,7 +248,7 @@
 	ZmZmg1MTpj6DeHnQPoPQg+A+AYY=
 	</data>
 	<key>columnCount</key>
-	<integer>130</integer>
+	<integer>250</integer>
 	<key>cyanColour</key>
 	<data>
 	BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm

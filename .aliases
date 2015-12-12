@@ -18,7 +18,7 @@ alias f='open -a Finder ./'              # Opens current directory in finder
 alias c='clear'                          # Clear the terminal
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less' # Full recursive directory listing
 alias poweroff='sudo shutdown -h now'
-alias rmall='sudo rm -rf * .* *.*'               #Remove all file in current directory
+alias rmall='sudo rm -rvf  *.*'               #Remove all file in current directory
 
 #Process Management
 alias memHogsTop='top -l 1 -o rsize | head -20'    # find memory hogs
