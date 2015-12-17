@@ -79,6 +79,7 @@ let g:syntastic_enable_signs = 1
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_enable_highlighting = 1
+let g:syntastic_html_tidy_exec = 'tidy5'
 
 "Nerdtree settings
 let g:NERDTreeChDirMode=2
@@ -174,10 +175,6 @@ let g:gitgutter_signs = 1
 let g:gitgutter_sign_added = ''
 let g:gitgutter_sign_modified = ''
 let g:gitgutter_sign_removed = ''
-
-"YouCompleteMe settings
-let g:ycm_seed_identifiers_with_syntax=1
-let g:ycm_show_diagnostics_ui = 0
 
 "color code settings
 let g:color_coded_enabled = 0
