@@ -29,8 +29,6 @@ alias ttop="top -R -F -s 10 -o rsize"              # minimize resources
 
 #Networking
 
-alias myipv6='curl icanhazip.com'                   # public ip add v6
-alias myip='curl ipecho.net/plain; echo'            # public ip add v4
 alias myhost='curl ifconfig.me/host'                # public hostname  
 alias netCons='lsof -i'                             # show all open tcp/ip sockets
 alias flushDNS='dscacheutil -flushcache'            # Flush out the dns cache
@@ -47,4 +45,4 @@ alias webserver='ssh user@'
 alias angkyria='ssh user@snf-659261.vm.okeanos.grnet.gr'
 
 #OS X Update
-alias update='sudo softwareupdate -liva; sudo port selfupdate; sudo port upgrade outdated; sudo gem update --system; sudo gem update'
+alias update='sudo softwareupdate -liva; sudo gem update --system; sudo gem update'

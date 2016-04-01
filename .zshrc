@@ -8,18 +8,19 @@ autoload -U colors && colors
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history load ram ip battery time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history battery)
 POWERLEVEL9K_SHOW_CHANGESET=true
-POWERLEVEL9K_IP_INTERFACE="en0"
+POWERLEVEL9K_CHANGESET_HASH_LENGTH=4
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
 POWERLEVEL9K_VCS_FOREGROUND='234'
 POWERLEVEL9K_VCS_DARK_FOREGROUND='016'
 POWERLEVEL9K_VCS_BACKGROUND='119'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='234'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='202'
+ZSH_TMUX_AUTOSTART="true"
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+#CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
@@ -60,7 +61,7 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker colored-man colorize copydir copyfile cp extract history mosh git github gitgnore forklift macports osx pod terminalapp ssh-agent)
+plugins=(colored-man colorize copydir copyfile cp extract history tmux git github gitgnore forklift brew osx pod terminalapp ssh-agent)
 
 # User configuration
 

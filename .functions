@@ -74,7 +74,7 @@ echo -e "\n${RED}Current date :$NC " ; date
 echo -e "\n${RED}Machine stats :$NC " ; uptime
 echo -e "\n${RED}Wi-Fi Info" ;networksetup -getinfo Wi-Fi ;airport -I
 echo -e "\n${RED}Current network location :$NC " ; scselect
-echo -e "\n${RED}Public facing IP Address :$NC " ;myip ;myipv6
+echo -e "\n${RED}Public facing IP Address :$NC " ;publicip4 ;publicip6
 echo -e "\n${RED}Public host name:$NC" ;myhost
 # echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
 echo

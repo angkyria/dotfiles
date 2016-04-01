@@ -76,8 +76,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_signs = 1
-let g:syntastic_error_symbol = "✗"
-let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_error_symbol = ""
+let g:syntastic_warning_symbol = ""
 let g:syntastic_enable_highlighting = 1
 let g:syntastic_html_tidy_exec = 'tidy5'
 
@@ -130,13 +130,8 @@ let g:webdevicons_enable_unite = 1
 let g:webdevicons_enable_vimfiler = 1
 let g:webdevicons_enable_ctrlp = 1
 
-
-"tmuxline settings
-let g:tmuxline_powerline_separators = 0
-let g:tmuxline_preset = 'full'
-
 "Neocomplcache setting
-let g:acp_enableAtStartup = 0
+let g:acp_enableAtStartup = 1
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_camel_case_completion = 1
@@ -184,11 +179,6 @@ let g:bufferline_echo = 1
 let g:bufferline_modified = '[+]'
 let g:bufferline_show_bufnr = 1
 let g:bufferline_solo_highlight = 0
-
-"tmuxline settings 
-let g:tmuxline_powerline_separators = 1
-let g:tmuxline_preset = 'full'
-let g:tmuxline_theme = 'zenburn'
 
 "colorizer settings
 let g:colorizer_auto_color = 1
