@@ -14,6 +14,10 @@ charging=`ioreg -n AppleSmartBattery | grep -i IsCharging | awk '{print $5}'`
 hour=$(( $timerem / 60 ))
 min=$(( $timerem - ( 60 * hour )))
 
+if [ $min -lt 10 ];then
+    min="0$min"
+fi
+
 if [ $connected == "Yes" ]; then
     if [ $timerem -eq 0 ]; then
         echo -e "#[bg=colour0, fg=colour46]  100% "
