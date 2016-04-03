@@ -74,10 +74,11 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
+let g:syntastic_aggregate_errors = 1
 let g:syntastic_enable_signs = 1
 let g:syntastic_error_symbol = ""
-let g:syntastic_warning_symbol = ""
+let g:syntastic_warning_symbol = "" 
 let g:syntastic_enable_highlighting = 1
 let g:syntastic_html_tidy_exec = 'tidy5'
 
@@ -170,6 +171,8 @@ let g:gitgutter_signs = 1
 let g:gitgutter_sign_added = ''
 let g:gitgutter_sign_modified = ''
 let g:gitgutter_sign_removed = ''
+let g:gitgutter_sign_removed_first_line = ''
+let g:gitgutter_sign_modified_removed = ''
 
 "color code settings
 let g:color_coded_enabled = 0
