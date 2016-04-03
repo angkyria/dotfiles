@@ -1,0 +1,2 @@
+#!/bin/bash
+dig +short myip.opendns.com. AAAA @2620:0:ccc::2

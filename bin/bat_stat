@@ -1,0 +1,41 @@
+#!/bin/bash
+
+battery_low=20
+battery_medium=50
+battery_high=70
+battety_info="$(ioreg -n AppleSmartBattery)"
+max_cap="$(echo "$battety_info" | awk '/MaxCapacity/{print $5}')"
+cur_cap="$(echo "$battety_info" | awk '/CurrentCapacity/{print $5}')"
+current_bat="$(awk -v cur="$cur_cap" -v max="$max_cap" 'BEGIN{ printf("%.f\n", cur/max*100) }')" 
+connected=`ioreg -n AppleSmartBattery | grep -i ExternalConnected | awk '{print $5}'` 
+time_remaining="$(echo "battery_info" | awk '/TimeRemaining/{print $5}')"
+timerem=`ioreg -n AppleSmartBattery | grep -i TimeRemaining | awk '{print $5}'`
+charging=`ioreg -n AppleSmartBattery | grep -i IsCharging | awk '{print $5}'`
+hour=$(( $timerem / 60 ))
+min=$(( $timerem - ( 60 * hour )))
+
+if [ $connected == "Yes" ]; then
+    if [ $timerem -eq 0 ]; then
+        echo -e "#[bg=colour0, fg=colour46]  100% "
+    elif [ $current_bat -lt $battery_low ]; then
+        echo -e "#[bg=colour0, fg=colour226]  $current_bat% ($hour:$min) "
+    elif [ $current_bat -lt $battery_medium ]; then
+        echo -e "#[bg=colour0, fg=colour226]  $current_bat% ($hour:$min) " 
+    elif [ $current_bat -lt $battery_high ]; then
+        echo -e "#[bg=colour0, fg=colour226]  $current_bat% ($hour:$min) " 
+    else [ $current_bat -gt $battery_high ]
+        echo -e "#[bg=colour0, fg=colour226]  $current_bat% ($hour:$min) " 
+    fi
+else
+    if [ $timerem -eq 0 ]; then
+        echo -e "#[bg=colour0, fg=colour46] 100% "
+    elif [ $current_bat -lt $battery_low ]; then
+        echo -e "#[bg=colour0, fg=colour196] $current_bat% ($hour:$min) "
+    elif [ $current_bat -lt $battery_medium ]; then
+        echo -e "#[bg=colour0, fg=colour208] $current_bat% ($hour:$min) " 
+    elif [ $current_bat -lt $battery_high ]; then
+        echo -e "#[bg=colour0, fg=colour51] $current_bat% ($hour:$min) " 
+    else [ $current_bat -gt $battery_high ]
+        echo -e "#[bg=colour0, fg=colour46] $current_bat% ($hour:$min) " 
+    fi
+fi

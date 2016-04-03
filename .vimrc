@@ -131,7 +131,7 @@ let g:webdevicons_enable_vimfiler = 1
 let g:webdevicons_enable_ctrlp = 1
 
 "Neocomplcache setting
-let g:acp_enableAtStartup = 1
+let g:acp_enableAtStartup = 0
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_camel_case_completion = 1
