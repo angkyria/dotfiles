@@ -207,3 +207,7 @@ if has("autocmd") && exists("+omnifunc")
                         \   setlocal omnifunc=syntaxcomplete#Complete |
                         \ endif
 endif
+
+"markdown settings
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
