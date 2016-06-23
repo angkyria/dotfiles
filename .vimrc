@@ -175,7 +175,7 @@ let g:gitgutter_sign_removed_first_line = ''
 let g:gitgutter_sign_modified_removed = ''
 
 "color code settings
-let g:color_coded_enabled = 1 
+let g:color_coded_enabled = 0 
 
 "bufferline settings
 let g:bufferline_echo = 1

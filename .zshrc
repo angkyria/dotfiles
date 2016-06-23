@@ -61,7 +61,7 @@ ZSH_TMUX_AUTOSTART="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man colorize copydir copyfile cp extract history tmux git github gitgnore forklift brew osx pod terminalapp ssh-agent)
+plugins=(docker colored-man colorize copydir copyfile cp extract history tmux git github gitgnore forklift brew osx pod terminalapp ssh-agent)
 
 # User configuration
 
