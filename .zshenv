@@ -2,7 +2,7 @@
 
 #set executable file path
 typeset -U path
-path=(~/bin /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/sbin /usr/local/go/bin /opt/local/bin /opt/local/sbin /opt/X11/bin $path)
+path=(~/homebrew/bin ~/homebrew/sbin ~/bin /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/sbin /usr/local/go/bin /opt/local/bin /opt/local/sbin /opt/X11/bin $path)
 
 #set editor
 export EDITOR="vim"

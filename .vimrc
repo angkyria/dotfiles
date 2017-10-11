@@ -53,7 +53,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 let g:solarized_contrast="normal"
 let g:solarized_visibility="normal"
-color solarized
+colorscheme solarized
 highlight clear SignColumn 
 highlight clear LineNr
 set t_Co=256
@@ -175,7 +175,7 @@ let g:gitgutter_sign_removed_first_line = ''
 let g:gitgutter_sign_modified_removed = ''
 
 "color code settings
-let g:color_coded_enabled = 0 
+let g:color_coded_enabled = 1
 
 "bufferline settings
 let g:bufferline_echo = 1
@@ -211,3 +211,11 @@ endif
 "markdown settings
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+
+"indent settings
+let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_guide_size = 1
+let g:indent_guides_start_level = 2
+
+"emmet settings
+let g:user_emmet_mode='a' 

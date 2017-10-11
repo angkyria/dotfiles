@@ -1,14 +1,17 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/angkyria/.oh-my-zsh
+export ZSH=/Users/angkyria/oh-my-zsh
 autoload -U colors && colors
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history)
+POWERLEVEL9K_CONTEXT_TEMPLATE="%n"
+POWERLEVEL9K_HOME_SUB_ICON=''
+POWERLEVEL9K_FOLDER_ICON=''
 POWERLEVEL9K_SHOW_CHANGESET=true
 POWERLEVEL9K_CHANGESET_HASH_LENGTH=6
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
@@ -20,7 +23,7 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='202'
 ZSH_TMUX_AUTOSTART="true"
 
 # Uncomment the following line to use case-sensitive completion.
-#CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
@@ -61,7 +64,7 @@ ZSH_TMUX_AUTOSTART="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker colored-man colorize copydir copyfile cp extract history tmux git github gitgnore forklift brew osx pod terminalapp ssh-agent)
+plugins=(docker colored-man colorize copydir copyfile cp extract history git github gitgnore forklift brew osx pod terminalapp ssh-agent)
 
 # User configuration
 

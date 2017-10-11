@@ -4,7 +4,7 @@ done
 unset file
 
 #Paths
-export PATH=~/bin:/bin/:/sbin/:/usr/bin/:/usr/sbin/:/usr/local/bin/:/opt/local/bin:/opt/local/sbin/:/usr/local/go/bin:/opt/X11/bin:PATH
+export PATH=~/homebrew/bin:~/homebrew/sbin:~/bin:/bin/:/sbin/:/usr/bin/:/usr/sbin/:/usr/local/bin/:/opt/local/bin:/opt/local/sbin/:/usr/local/go/bin:/opt/X11/bin:PATH
 
 #Bash completion
 if [ -f /usr/local/share/bash-completion/bash_completion ];then

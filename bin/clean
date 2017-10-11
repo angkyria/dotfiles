@@ -13,5 +13,6 @@ sudo rm -rf /Library/Logs/*
 sudo rm -rf ~/Library/Logs/*
 sudo rm -rf /private/var/folders/*
 sudo rm -rf ~/Library/Safari/H*
-sudo find / -name ".DS_Store" -depth -exec rm {} \;
+sudo find / -name ".DS_Store" -depth -exec rm -rfv {} \;
+sudo find / -name ".localized" -depth -exec rm -rfv {} \;
 sudo purge
