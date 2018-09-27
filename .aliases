@@ -46,3 +46,5 @@ alias angkyria='ssh user@snf-659261.vm.okeanos.grnet.gr'
 
 #OS X Update
 alias update='sudo softwareupdate -liva; sudo gem update --system; sudo gem update'
+
+alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'   
