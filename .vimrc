@@ -162,7 +162,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 "Ultisnips settings
-let g:UltiSnipsUsePythonVersion = 2
+"let g:UltiSnipsUsePythonVersion = 2
 
 "gitgutter settings
 let g:gitgutter_realtime = 1
