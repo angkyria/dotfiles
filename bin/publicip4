@@ -1,8 +1,0 @@
-#!/bin/bash
-ip=`curl -4 ifconfig.co; echo`
-if [ -n $ip ]
-then
-    echo $ip
-else    
-    echo "No external network"
-fi
