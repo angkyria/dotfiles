@@ -21,6 +21,7 @@ POWERLEVEL9K_VCS_BACKGROUND='119'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='234'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='202'
 ZSH_TMUX_AUTOSTART="true"
+source $(dirname $(gem which colorls))/tab_complete.sh
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"

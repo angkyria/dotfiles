@@ -1,3 +1,4 @@
+alias lc='colorls -a'
 alias rm='rm -dvr'
 alias cp='cp -iv'
 alias mv='mv -iv'

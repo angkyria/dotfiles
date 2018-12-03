@@ -1,5 +1,5 @@
 #!/bin/bash
-ip=`ipconfig getifaddr en4`
+ip=`ipconfig getifaddr en3`
 if [ -z $ip ] 
 then
     echo "no wire network"

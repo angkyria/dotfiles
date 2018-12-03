@@ -20,5 +20,5 @@ export HOME=/Users/angkyria
 export TERM=xterm-256color
 
 #export HOMEBREW_NO_INSECURE_REDIRECT=1
-export HOMEBREW_CASK_OPTS=--require-sha
+#export HOMEBREW_CASK_OPTS=--require-sha
 export HOMEBREW_NO_ANALYTICS=1
