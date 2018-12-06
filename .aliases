@@ -3,10 +3,12 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias mkdir='mkdir -pv'
 alias mk='mkdir -pv'
-alias ls='ls -FGa'
-alias ll='ls -FGlAhp'
+alias ls='ls -a --color'
+alias ll='ls -al --color'
+alias lc='colorls -a'
+alias lcl='colorls -al'
 alias less='less -FSRXc'
-cd() { builtin cd "$@"; ll; }
+cd() { builtin cd "$@"; lcl; }
 alias cd..='cd ../'                      # Go back 1 directory level
 alias ..='cd ../'                        # Go back 1 directory level
 alias ...='cd ../../'                    # Go back 2 directory level
@@ -14,7 +16,6 @@ alias .3='cd ../../../'                  # Go back 3 directory level
 alias .4='cd ../../../../'               # Go back 4 directory level
 alias .5='cd ../../../../../'            # Go back 5 directory level
 alias ~='cd ~'                           # Go Home
-alias f='open -a Finder ./'              # Opens current directory in finder
 alias c='clear'                          # Clear the terminal
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less' # Full recursive directory listing
 alias poweroff='sudo shutdown -h now'
@@ -39,12 +40,5 @@ alias ipInfo0='ipconfig getpacket en0'              # ipInfo0:      Get info on 
 alias ipInfo1='ipconfig getpacket en1'              # ipInfo1:      Get info on connections for en1
 alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
 alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rules inc/ blocked IPs
-
-#Server Alias
-alias webserver='ssh user@'
-alias angkyria='ssh user@snf-659261.vm.okeanos.grnet.gr'
-
-#OS X Update
-alias update='sudo softwareupdate -liva; sudo gem update --system; sudo gem update'
-
-alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'   
+alias publicip4='curl -4 ifconfig.co' 
+alias publicip6='curl -6 ifconfig.co'                                                                  

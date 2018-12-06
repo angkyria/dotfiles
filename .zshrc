@@ -8,7 +8,7 @@ autoload -U colors && colors
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status battery history)
 POWERLEVEL9K_CONTEXT_TEMPLATE="%n"
 POWERLEVEL9K_HOME_SUB_ICON=''
 POWERLEVEL9K_FOLDER_ICON=''
@@ -64,13 +64,10 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker colored-man colorize copydir copyfile cp extract history git github gitgnore forklift brew osx pod terminalapp ssh-agent)
+plugins=(colorize copydir cp compleat dircycle extract history rsync ssh-agent git github gitgnore gnu-utils debian)
 
 # User configuration
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.functions
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
