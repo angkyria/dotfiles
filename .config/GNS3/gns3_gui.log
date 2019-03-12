@@ -1,0 +1,6 @@
+2019-03-07 12:56:46 INFO logger.py:126 Log level: INFO
+2019-03-07 12:56:46 INFO main.py:259 GNS3 GUI version 2.1.14
+2019-03-07 12:56:46 INFO main.py:260 Copyright (c) 2007-2019 GNS3 Technologies Inc.
+2019-03-07 12:56:46 INFO main.py:262 Application started with /Applications/GNS3.app/Contents/MacOS/gns3
+2019-03-07 12:57:07 INFO sudo.py:54 Execute as admin: osascript -e do shell script "chown root:admin /Applications/GNS3.app/Contents/Resources/ubridge && chmod 4750 /Applications/GNS3.app/Contents/Resources/ubridge" with administrator privileges
+2019-03-07 12:57:19 WARNING __init__.py:290 Project untitled already exists, overwrite it?

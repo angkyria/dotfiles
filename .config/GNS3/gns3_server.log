@@ -1,0 +1,98 @@
+2019-03-07 12:57:13 INFO run.py:213 GNS3 server version 2.1.14
+2019-03-07 12:57:13 INFO run.py:215 Copyright (c) 2007-2019 GNS3 Technologies Inc.
+2019-03-07 12:57:13 INFO run.py:218 Config file /Users/angkyria/.config/GNS3/gns3_server.conf loaded
+2019-03-07 12:57:13 WARNING run.py:224 Local mode is enabled. Beware, clients will have full control on your filesystem
+2019-03-07 12:57:13 INFO run.py:232 Running with Python 3.6.5 and has PID 4735
+2019-03-07 12:57:14 INFO web_server.py:283 Starting server on 127.0.0.1:3080
+2019-03-07 12:57:14 INFO __init__.py:65 Load controller configuration file /Users/angkyria/.config/GNS3/gns3_controller.conf
+2019-03-07 12:57:14 INFO __init__.py:168 Start controller
+2019-03-07 12:57:14 INFO compute.py:79 Create compute local
+2019-03-07 12:57:14 INFO compute.py:420 Connecting to compute 'local'
+2019-03-07 12:57:14 INFO __init__.py:280 Start the GNS3 VM
+2019-03-07 12:57:14 INFO compute.py:79 Create compute vm
+2019-03-07 12:57:14 INFO __init__.py:581 Searching for VMware VMs in inventory file "/Users/angkyria/Library/Application Support/VMware Fusion/vmInventory"
+2019-03-07 12:57:14 INFO __init__.py:397 Executing vmrun with command: '/Applications/VMware Fusion.app/Contents/Library/vmrun' -T fusion checkToolsState '/Users/angkyria/Virtual Machines.localized/GNS3 VM.vmwarevm/GNS3 VM.vmx'
+2019-03-07 12:57:15 INFO __init__.py:397 Executing vmrun with command: '/Applications/VMware Fusion.app/Contents/Library/vmrun' -T fusion list
+2019-03-07 12:57:15 INFO vmware_gns3_vm.py:168 Waiting for GNS3 VM IP
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/appliances HTTP/1.1" 200 4997 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/computes HTTP/1.1" 200 1009 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/appliances HTTP/1.1" 200 4997 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/appliances/templates HTTP/1.1" 200 565286 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/appliances/templates HTTP/1.1" 200 565286 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO compute.py:420 Connecting to compute 'local'
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/projects HTTP/1.1" 200 2041 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/version HTTP/1.1" 200 227 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/projects HTTP/1.1" 200 2041 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO vmware_gns3_vm.py:182 GNS3 VM IP address set to 192.168.192.128
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/compute/capabilities HTTP/1.1" 200 520 "-" "Python/3.6 aiohttp/2.3.10"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/symbols/:/symbols/multilayer_switch.svg/raw HTTP/1.1" 200 21517 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/symbols/:/symbols/docker_guest.svg/raw HTTP/1.1" 200 26604 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/symbols/:/symbols/router.svg/raw HTTP/1.1" 200 11037 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/symbols/:/symbols/cloud.svg/raw HTTP/1.1" 200 27982 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/symbols/:/symbols/vpcs_guest.svg/raw HTTP/1.1" 200 19495 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/symbols/:/symbols/ethernet_switch.svg/raw HTTP/1.1" 200 9273 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/symbols/:/symbols/hub.svg/raw HTTP/1.1" 200 7636 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:16 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:16 +0000] "GET /v2/symbols/:/symbols/frame_relay_switch.svg/raw HTTP/1.1" 200 10027 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/:/symbols/atm_switch.svg/raw HTTP/1.1" 200 9959 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'fortinet.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/fortinet.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'mgmt_station.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/mgmt_station.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/:/symbols/firewall.svg/raw HTTP/1.1" 200 9626 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'linux_guest.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/linux_guest.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'juniper-vqfx.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/juniper-vqfx.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol ':/symbols/guest.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/:/symbols/guest.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'ostinato-3d-icon.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/ostinato-3d-icon.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'loadbalancer.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/loadbalancer.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'microsoft.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/microsoft.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'vRIN.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/vRIN.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/:/symbols/ids.svg/raw HTTP/1.1" 200 13373 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'ethernet_switch.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/ethernet_switch.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'juniper-vmx.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/juniper-vmx.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/:/symbols/asa.svg/raw HTTP/1.1" 200 18812 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'pan-vm-fw.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/pan-vm-fw.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'cisco-fmcv.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/cisco-fmcv.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/:/symbols/wlan_controller.svg/raw HTTP/1.1" 200 261470 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'cisco-ise.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/cisco-ise.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/:/symbols/router_firewall.svg/raw HTTP/1.1" 200 50061 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'firefox.svg'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/firefox.svg/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:17 WARNING symbols.py:94 Could not retrieve symbol 'securityonion-logo.png'
+2019-03-07 12:57:17 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:17 +0000] "GET /v2/symbols/securityonion-logo.png/raw HTTP/1.1" 200 18843 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:18 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:18 +0000] "GET /v2/computes HTTP/1.1" 200 1402 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:19 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:19 +0000] "GET /v2/computes HTTP/1.1" 200 1402 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:20 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:20 +0000] "DELETE /v2/projects/25d494ca-2bcc-4ccd-8d7a-9244cb6757c4 HTTP/1.1" 204 210 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:20 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:20 +0000] "GET /v2/projects HTTP/1.1" 200 1444 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:20 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:20 +0000] "GET /v2/projects HTTP/1.1" 200 1444 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:20 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:20 +0000] "POST /v2/settings HTTP/1.1" 201 10236 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:20 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:20 +0000] "POST /v2/projects HTTP/1.1" 201 702 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:21 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:21 +0000] "POST /v2/settings HTTP/1.1" 201 10236 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:21 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:21 +0000] "GET /v2/appliances HTTP/1.1" 200 4997 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:21 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:21 +0000] "GET /v2/appliances/templates HTTP/1.1" 200 565286 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:21 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:57:21 +0000] "GET /v2/computes HTTP/1.1" 200 1402 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 12:57:26 INFO compute.py:420 Connecting to compute 'vm'
+2019-03-07 12:57:26 ERROR compute.py:458 GNS3 version 2.1.14 is not the same as the GNS3 VM version 2.1.11. Please upgrade the GNS3 VM.
+2019-03-07 12:57:26 WARNING __init__.py:344 Could not check the VM is in the same subnet as the local server: GNS3 version 2.1.14 is not the same as the GNS3 VM version 2.1.11. Please upgrade the GNS3 VM.
+2019-03-07 12:58:37 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:10:58:37 +0000] "GET /v2/computes HTTP/1.1" 200 1934 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 13:03:33 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:11:03:33 +0000] "GET /v2/computes HTTP/1.1" 200 1934 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 13:05:28 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:11:05:28 +0000] "GET /v2/computes HTTP/1.1" 200 1933 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 13:07:02 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:11:07:02 +0000] "POST /v2/settings HTTP/1.1" 201 10236 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 13:07:02 INFO server_handler.py:53 Start shutting down the server
+2019-03-07 13:07:02 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:11:07:02 +0000] "POST /v2/shutdown HTTP/1.1" 201 194 "-" "GNS3 QT Client v2.1.14"
+2019-03-07 13:07:05 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:11:07:05 +0000] "GET /v2/compute/notifications/ws HTTP/1.1" 200 479 "-" "Python/3.6 aiohttp/2.3.10"
+2019-03-07 13:07:05 INFO helpers.py:534 127.0.0.1 [07/Mar/2019:11:07:05 +0000] "GET /v2/projects/33740a43-9e61-4cf9-878d-a28096b566d0/notifications/ws HTTP/1.1" 408 561 "-" "-"
+2019-03-07 13:07:05 INFO __init__.py:222 Stop controller
+2019-03-07 13:07:05 INFO run.py:261 Remove PID file /Users/angkyria/.config/GNS3/gns3_server.pid
